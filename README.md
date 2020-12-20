@@ -9,4 +9,4 @@ For this project, I was using code examples from Udacity's Data Scientist nanode
 There are python files including all the classes that are necessary to run the code. Also there is the setup file to run pip install and the init to load the distribution classes.
 
 ## Licensing, Authors, Acknowledgements
-I must give credit to Udacity's Data Scientist nanodegree for the code on Gaussian distribution.
+I must give credit to Udacity's Data Scientist nanodegree for the code on Gaussian distribution and the Distribution class.
