@@ -12,7 +12,7 @@ That's to demonstrate the benefits of object oriented programming in writing pro
 Further to showcase clean, modular and well-documented code examples which greatly benefit collaboration.
 
 ## File Descriptions
-There are python files including all the classes that are necessary to run the code. Also there is the setup file to run pip install and the init to load the distribution classes.
+There are python files including all the files that are necessary to run the code. Also there is the setup file to run pip install and the init to load the distribution classes.
 
 ## Licensing, Authors, Acknowledgements
 I must give credit to Udacity's Data Scientist nanodegree program for the code on Gaussian distribution and the Distribution class.
