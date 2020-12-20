@@ -2,6 +2,8 @@
 The code should run with no issues using Python versions 3.*.
 The package can be installed on any local python environment with pip install .
 
+The project is ongoing, so commits to the repo are happening.
+
 ## Project Motivation
 For this project, I want to showcase how to create a python package from scratch for binomial distribution.
 
