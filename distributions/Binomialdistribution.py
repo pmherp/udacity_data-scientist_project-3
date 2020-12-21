@@ -93,7 +93,7 @@ class Binomial(Distribution):
             None
         """
         plt.bar(x = ['0', '1'], height = [(1 - self.p) * self.n, self.p * self.n])
-        plt.title('Bar Chart for Data List')
+        plt.title('Bar Chart for Data')
         plt.xlabel('data')
         plt.ylabel('count')
     
@@ -160,20 +160,26 @@ class Binomial(Distribution):
         except AssertionError as error:
             raise
         
-        # TODO: Define addition for two binomial distributions. Assume that the
-        # p values of the two distributions are the same. The formula for 
-        # summing two binomial distributions with different p values is more complicated,
-        # so you are only expected to implement the case for two distributions with equal p.
+        #create new binomial object
+        new_binomial = Binomial()
         
-        # the try, except statement above will raise an exception if the p values are not equal
+        #calculate mean of new binomial
+        new_binomial.calculate_mean()
         
-        # Hint: When adding two binomial distributions, the p value remains the same
-        #   The new n value is the sum of the n values of the two distributions.
+        #calculate standard deviation of new binomial
+        new_binomial.calculate_stdev()
         
+        #calculate size of new binomial
+        new_binomial.n = self.n + other.n
         
-                        
+        #for easier implementation, probability will be assumed to be equal only
+        new_binomial.p = self.p
+        
+        return new_binomial
+                    
+        
     # use the __repr__ magic method to output the characteristics of the binomial distribution object.
-    
+    def __repr__(self):
         """Function to output the characteristics of the Binomial instance
         
         Args:
@@ -183,11 +189,6 @@ class Binomial(Distribution):
             string: characteristics of the Binomial object
         
         """
-        
-        # TODO: Define the representation method so that the output looks like
-        #       mean 5, standard deviation 4.5, p .8, n 20
-        #
-        #       with the values replaced by whatever the actual distributions values are
-        #       The method should return a string in the expected format
-    
-        pass
+
+        #override magic method __repr__
+        return ('mean {}, standard deviation {}, p {}, n {}'.format(self.calculate_mean(), self.calculate_stdev(), self.p, self.n))
